@@ -5,36 +5,20 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { SplashPage } from "./home/SplashPage";
+import './home/SplashPage.css';
+import './App.css'
 
 export default function App() {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
-
-        <hr />
-
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<SplashPage />} />
           <Route path="/about" element={ <About />} />
         </Routes>
       </div>
     </Router>
-  );
-}
-
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
   );
 }
 
