@@ -1,0 +1,30 @@
+.nav {
+    text-transform: uppercase;
+    font-family: franklin-gothic-urw,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    size: 15pt;
+    letter-spacing: 3.75px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav .rightNav {
+    float: right;
+    margin-top: -1em;
+}
+
+.nav .rightNav a {
+    padding-left: 3em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav .rightNav a:hover {
+    color: #d1d1d1;
+    text-decoration: none;
+}

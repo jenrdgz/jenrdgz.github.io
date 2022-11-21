@@ -4,9 +4,12 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import { SplashPage } from "./home/SplashPage";
-import './home/SplashPage.css';
+import { SplashPage } from "./splashpage/SplashPage";
+import './splashpage/SplashPage.css';
 import './App.css'
+import './nav/Nav.css';
+import './portfolio/Work.css';
+import { Portfolio } from "./portfolio/Portfolio";
 
 export default function App() {
   return (
@@ -14,17 +17,9 @@ export default function App() {
       <div>
         <Routes>
           <Route path="/" element={<SplashPage />} />
-          <Route path="/about" element={ <About />} />
+          <Route path="/about" element={ <Portfolio />} />
         </Routes>
       </div>
     </Router>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
   );
 }

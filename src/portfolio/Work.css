@@ -1,0 +1,61 @@
+.wrapper {
+    width: 83%;
+    padding: 1em;
+    margin: auto;
+    position: relative;
+}
+
+.grid-container {
+    overflow: auto;
+    height: 75vh;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.grid-container::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.wrapper .right-bottom {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+  transform: rotate(-90deg);
+}
+
+.wrapper .left-bottom {
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.wrapper .left-top {
+    top: 0px;
+    position: absolute;
+    left: 0px;
+}
+
+.wrapper .right-top {
+    top: 0px;
+    position: absolute;
+    right: 0px;
+    transform: rotate(90deg);
+}
+
+.grid {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+}
+
+.grid .image {
+    place-self: center;
+    overflow: hidden;
+}
+
+.grid .image img {
+    width: 100%;
+    object-fit: cover; /* Required to prevent the image from stretching, use the object-position property to adjust the visible area */
+    aspect-ratio: 1/1;
+}
