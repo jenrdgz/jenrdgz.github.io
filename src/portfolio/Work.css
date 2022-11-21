@@ -51,6 +51,7 @@
 
 .grid .image {
     place-self: center;
+    height: 36.5vh;
     overflow: hidden;
 }
 
