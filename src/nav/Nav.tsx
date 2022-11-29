@@ -6,7 +6,7 @@ export function Nav() {
     return (
       <div className="nav">
         <div className="title">
-            Jenny Rodriguez
+            Jenny Rodriguez, MA
         </div>
         <div className="rightNav">
           <Link to="/about">
@@ -19,7 +19,7 @@ export function Nav() {
             About
           </Link>
           <Link to="/about">
-            Resume
+            Résumé
           </Link>
         </div>
       </div>  

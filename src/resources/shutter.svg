@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="189.485 32.549 247.769 258.408" width="247.769" height="258.408" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="260.665" cy="171.402" r="123.884" id="gradient-0" spreadMethod="pad" gradientTransform="matrix(1.733491, 0.022119, -0.018658, 1.462246, -190.362088, -81.112195)">
+      <stop offset="0" style="stop-color: rgba(63, 63, 63, 1)"/>
+      <stop offset="1" style="stop-color: rgb(29, 29, 29);"/>
+    </radialGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="313.37" y1="32.549" x2="313.37" y2="290.957" id="gradient-2" gradientTransform="matrix(-0.179857, -0.983692, 0.282107, -0.051579, 315.283232, 474.19237)">
+      <stop offset="0" style="stop-color: rgba(60, 60, 60, 1)"/>
+      <stop offset="1" style="stop-color: rgb(17, 17, 17);"/>
+    </linearGradient>
+  </defs>
+  <path style="paint-order: fill; fill: url(#gradient-0); stroke: url(#gradient-2);" d="M 308.757 32.549 C 301.349 121.27 188.277 304.727 189.495 290.136 L 437.254 289.891 C 429.425 199.572 391.5 85.13 308.757 32.549 Z"/>
+</svg>

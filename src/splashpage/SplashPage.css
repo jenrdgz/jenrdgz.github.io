@@ -13,6 +13,10 @@
     color: white;
 }
 
+.customLink:hover {
+    cursor: pointer;
+}
+
 .splashPage .title {
     position: absolute;
     top: 45%;

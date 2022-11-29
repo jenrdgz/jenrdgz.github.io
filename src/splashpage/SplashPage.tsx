@@ -1,10 +1,30 @@
+import { useEffect, useState } from "react";
 import {
-    Link
+    Link, useNavigate
   } from "react-router-dom";
+import { Page } from "../sharedComponents/Page";
+import { ShutterAnimation } from "../shutter/ShutterAnimation";
 
-export function SplashPage() {
+export interface SplashPageProps {
+  setTransition: any;
+  halfFinishedTransitionAnimation: boolean;
+}
+
+export function SplashPage(props: SplashPageProps) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    props.setTransition(true);
+  }
+
+  if (props.halfFinishedTransitionAnimation) {
+    navigate("/about");
+  }
+
+
     return (
-      <Link to="/about" className="splashPage">
+      <Page>
+        <div onClick={handleClick} className="splashPage customLink">
         <div className="title">
             VIEWFINDER
             <img className="left-bottom" src={require("../resources/left-bottom-corner.png")}/>
@@ -14,6 +34,7 @@ export function SplashPage() {
                 {`Jenny Rodriguez is both—
             a graphic designer & photographer.`}
         </div>
-      </Link>
+      </div>
+      </Page>
     );
 }
