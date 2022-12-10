@@ -1,0 +1,24 @@
+.footer {
+    text-transform: uppercase;
+    font-size: 9pt;
+    letter-spacing: 3.75px;
+    padding-top: 2em;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer .rightFooter {
+    float: right;
+    margin-top: -2em;
+}
+
+.footer .rightFooter a {
+    padding-left: 1em;
+    text-decoration: none;
+}
+
+.footer .rightFooter a img {
+    width: 30px;
+    height: 30px;
+}

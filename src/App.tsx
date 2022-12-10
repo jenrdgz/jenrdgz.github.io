@@ -9,11 +9,13 @@ import { SplashPage } from "./splashpage/SplashPage";
 import './splashpage/SplashPage.css';
 import './App.css'
 import './nav/Nav.css';
-import './portfolio/Work.css';
+import './footer/Footer.css';
+import './work/Work.css';
 import './shutter/Shutter.css';
-import { Portfolio } from "./portfolio/Portfolio";
+import { Work } from "./work/Work";
 import { ShutterAnimation } from "./shutter/ShutterAnimation";
-import { Project } from "./portfolio/Project";
+import { Project } from "./work/Project";
+import { About } from "./about/About";
 
 export default function App() {
   const [transition, setTransition] = useState(false);
@@ -27,13 +29,16 @@ export default function App() {
         {displayTransition}
         <Routes>
           <Route path="/" element={<SplashPage setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
-          <Route path="/about" element={ <Portfolio setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
-          <Route path="/project1" element={ <Project />} />
-          <Route path="/project2" element={ <Project />} />
-          <Route path="/project3" element={ <Project />} />
-          <Route path="/project4" element={ <Project />} />
-          <Route path="/project5" element={ <Project />} />
-          <Route path="/project6" element={ <Project />} />
+          <Route path="/work" element={ <Work setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/project1" element={ <Project projectName="project1" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/project2" element={ <Project projectName="project2" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/project3" element={ <Project projectName="project3" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/project4" element={ <Project projectName="project4" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/project5" element={ <Project projectName="project5" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/project6" element={ <Project projectName="project6" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/about" element={ <About setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/portfolio" element={ <About setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/resume" element={ <About setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
         </Routes>
       </div>
     </Router>

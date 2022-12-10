@@ -44,8 +44,6 @@ export function ShutterAnimation(props: ShutterAnimationProps) {
     intervalId = setInterval(() => {
         setCurrentImage(current => {
             let next = 0;
-            console.log(`setting current image ${animationHalfFinished} ${animationFinished}`);
-            console.log(`setting current image ${current}`);
             if (animationHalfFinished) {
                 next = current - 1;
             } else if (animationFinished) {
@@ -55,7 +53,7 @@ export function ShutterAnimation(props: ShutterAnimationProps) {
             }
             return next;
         });
-    }, 50);
+    }, 30);
 
     
     return () => {
@@ -65,7 +63,6 @@ export function ShutterAnimation(props: ShutterAnimationProps) {
   const topPosition = -currentImage * blah;
      if (currentImage === framesTotal - 1 && !animationHalfFinished) {
     setAnimationHalfFinished(true);
-    console.log("halfway done");
     props.animationHalfFinishedCallback();
   }
 

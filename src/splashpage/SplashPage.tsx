@@ -18,12 +18,13 @@ export function SplashPage(props: SplashPageProps) {
   }
 
   if (props.halfFinishedTransitionAnimation) {
-    navigate("/about");
+    navigate("/work");
   }
 
 
     return (
-      <Page>
+      <Page setTransition={props.setTransition} halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation}>
+        <div className="splashPageWrapper">
         <div onClick={handleClick} className="splashPage customLink">
         <div className="title">
             VIEWFINDER
@@ -34,6 +35,7 @@ export function SplashPage(props: SplashPageProps) {
                 {`Jenny Rodriguez is both—
             a graphic designer & photographer.`}
         </div>
+      </div>
       </div>
       </Page>
     );

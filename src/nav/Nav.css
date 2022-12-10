@@ -1,9 +1,5 @@
 .nav {
     text-transform: uppercase;
-    font-family: franklin-gothic-urw,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
     size: 15pt;
     letter-spacing: 3.75px;
     padding-top: 2em;
@@ -18,13 +14,13 @@
     margin-top: -1em;
 }
 
-.nav .rightNav a {
+.nav .rightNav .navLink {
     padding-left: 3em;
     color: white;
     text-decoration: none;
 }
 
-.nav .rightNav a:hover {
+.nav .rightNav .navLink:hover {
     color: #d1d1d1;
     text-decoration: none;
 }

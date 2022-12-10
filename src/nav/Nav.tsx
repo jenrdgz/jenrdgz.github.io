@@ -1,26 +1,34 @@
+import { useState } from "react";
 import {
-    Link
+    Link, useNavigate
   } from "react-router-dom";
+import { CustomLink } from "../sharedComponents/CustomLink";
 
-export function Nav() {
+  export interface NavProps {
+    setTransition: any;
+    halfFinishedTransitionAnimation: boolean;
+  }
+
+
+export function Nav(props: NavProps) {
     return (
       <div className="nav">
         <div className="title">
-            Jenny Rodriguez, MA
+            Jenny Rodriguez
         </div>
         <div className="rightNav">
-          <Link to="/about">
+          <CustomLink linkTo="/work" customClass="navLink" setTransition={props.setTransition} halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation}>
             Work 
-          </Link>
-          <Link to="/about">
-            Portfolio
-          </Link>
-          <Link to="/about">
+          </CustomLink>
+          <CustomLink linkTo="/portfolio" customClass="navLink" setTransition={props.setTransition} halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation}>
+             Portfolio
+          </CustomLink>
+          <CustomLink linkTo="/about" customClass="navLink" setTransition={props.setTransition} halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation}>
             About
-          </Link>
-          <Link to="/about">
+          </CustomLink>
+          <CustomLink linkTo="/resume" customClass="navLink" setTransition={props.setTransition} halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation}>
             Résumé
-          </Link>
+          </CustomLink>
         </div>
       </div>  
       
