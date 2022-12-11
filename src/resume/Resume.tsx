@@ -21,8 +21,8 @@ export function Resume(props: ResumeProps) {
             <div className="details">
             <img className="left-top" src={require("../resources/left-top-corner-project-details.png")}/>
             <img className="left-bottom" src={require("../resources/left-top-corner-project-details.png")}/>
-
-              {`foo`}
+            <h1>RÉSUMÉ</h1>
+              <h4>Download</h4>
             </div>
            </div>
            </div>

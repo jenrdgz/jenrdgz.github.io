@@ -102,7 +102,7 @@
     padding-left: 10%;
     padding-right: 15%;
     left: 5%;
-    font-size: 9pt;
+    font-size: calc(.5em + .5vw);
     text-transform: none;
     letter-spacing: 1pt;
     padding-bottom: 1em;
@@ -125,7 +125,7 @@
     padding-left: 15%;
     padding-right: 15%;
     left: 5%;
-    font-size: 9pt;
+    font-size: calc(.5em + .5vw);
     text-transform: none;
     letter-spacing: 1pt;
     padding-bottom: 1em;
@@ -155,7 +155,7 @@
     padding: 1em;
     text-transform: uppercase;
     letter-spacing: 2pt;
-    font-size: 7pt;
+    font-size: calc(.19em + .5vw);
 }
 
 .wrapper .topPartWrapper .viewfinder {

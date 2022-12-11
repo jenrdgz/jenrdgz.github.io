@@ -7,7 +7,7 @@
 }
 
 .details h1 {
-    font-size:50pt;
+    font-size: calc(5em + 1vw);
     text-transform: uppercase;
     text-align: right;
     letter-spacing: 4pt;
@@ -15,8 +15,8 @@
 }
 
 .details h4 {
-    font-size:20pt;
-    text-transform: uppercase;
+    font-size: calc(1em + 1vw);
+   text-transform: uppercase;
     text-align: right;
     letter-spacing: 4pt;
     font-weight: normal;
