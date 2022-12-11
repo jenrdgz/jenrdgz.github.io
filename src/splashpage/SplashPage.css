@@ -24,16 +24,33 @@
 
 .splashPage .title {
     position: absolute;
-    top: 45%;
-    right: 7%;
-    font-size: 50pt;
-    letter-spacing: 10pt;
+    top: 35%;
+    right: 9%;
 }
+
+.title h1 {
+    font-size: calc(4em + .4vw);
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 4pt;
+    font-weight: normal;
+}
+
+
+.splashPage .title h4 {
+    font-size: calc(.8em + .4vw);
+   text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 4pt;
+    font-weight: normal;
+    margin-top: -40px;
+}
+
 
 .splashPage .title .left-bottom {
     position: absolute;
-    bottom: -30px;
-    left: -10px;    
+    bottom: -20px;
+    left: -60px;    
     width: 30px;
     height: 30px;
     -webkit-transform: rotate(270deg);
@@ -42,8 +59,8 @@
 
 .splashPage .title .left-top {
     position: absolute;
-    top: -30px;
-    left: -10px;
+    top: -20px;
+    left: -50px;
     width: 30px;
     height: 30px;
 }
@@ -54,6 +71,6 @@
     letter-spacing: 1pt;
     position: absolute;
     top: 75%;
-    left: 9%;
+    left: 4%;
     white-space: pre-line;
 }
