@@ -8,7 +8,7 @@ export function Footer() {
           <a href="https://www.linkedin.com/in/jennyrodriguezdesign/">
             <img src={require("../resources/linkedln.png")} />
           </a>
-          <a href="https://www.instagram.com/jennyrodriguezdesign/">
+          <a href="https://www.instagram.com/jennyrodriguez_design/">
             <img src={require("../resources/insta.png")} />
           </a>
           <a href="https://www.behance.net/jenniferodrigu90">

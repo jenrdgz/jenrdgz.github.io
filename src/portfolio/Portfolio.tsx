@@ -15,14 +15,14 @@ export function Portfolio(props: PortfolioProps) {
         <img className="right-bottom" src={require("../resources/left-top-corner-project.png")}/>
         <img className="right-top" src={require("../resources/left-top-corner-project.png")}/>
         <div className="viewfinder">ViewFinder</div>
-        <div className="topPart">
-           <ProgressiveImage src={require("../resources/work1.jpg")} placeholderSrc={require("../resources/work1-loading.jpg")} />
+        <div className="topPart sad">
+           <ProgressiveImage src={require("../resources/Frame.png")} placeholderSrc={require("../resources/Frame-loading.png")} />
            <div className="detailWrapper">
             <div className="details">
             <img className="left-top" src={require("../resources/left-top-corner-project-details.png")}/>
             <img className="left-bottom" src={require("../resources/left-top-corner-project-details.png")}/>
               <h1>Portfolio</h1>
-              <h4>View</h4>
+              <h4><a href="https://issuu.com/jenny_rodriguez/docs/web_viewfinder_pages" >View</a></h4>
             </div>
            </div>
            </div>
