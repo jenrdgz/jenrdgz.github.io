@@ -125,7 +125,7 @@ export const PROJECTS: { [key: string]: ProjectType } = {
             },
             {
                 imgSrc: require("../resources/project3/Page5.png"),
-                placeholder: require("../resources/project5/Page5-loading.png"),
+                placeholder: require("../resources/project3/Page5-loading.png"),
             },
         ]
     },
