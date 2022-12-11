@@ -45,14 +45,6 @@ export const PROJECTS: { [key: string]: ProjectType } = {
                 imgSrc: require("../resources/project1/Page1.png"),
                 placeholder: require("../resources/project1/Page1-loading.png"),
             },
-            {
-                imgSrc: require("../resources/project1/Page2.png"),
-                placeholder: require("../resources/project1/Page2-loading.png"),
-            },
-            {
-                imgSrc: require("../resources/project1/Page3.png"),
-                placeholder: require("../resources/project1/Page3-loading.png"),
-            },
        ]
     },
     project2: {
@@ -199,6 +191,10 @@ export const PROJECTS: { [key: string]: ProjectType } = {
             {
                 imgSrc: require("../resources/project5/Page4.png"),
                 placeholder: require("../resources/project5/Page4-loading.png"),
+            },
+            {
+                imgSrc: require("../resources/project5/Page5.png"),
+                placeholder: require("../resources/project5/Page5-loading.png"),
             },
         ]
     },
