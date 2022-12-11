@@ -32,8 +32,8 @@ export function SplashPage(props: SplashPageProps) {
             <img className="left-top" src={require("../resources/left-top-corner.png")}/>
         </div>
         <div className="description">
-                {`Jenny Rodriguez is both—
-            a graphic designer & photographer.`}
+                {`Jenny Rodriguez is a graphic designer 
+                who enjoys taking photos.`}
         </div>
       </div>
       </div>

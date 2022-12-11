@@ -47,11 +47,11 @@
 }
 
 .splashPage .description {
-    font-size: 30pt;
-    line-height: 38pt;
-    letter-spacing: 2pt;
+    font-size: 24pt;
+    line-height: 25pt;
+    letter-spacing: 1pt;
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 9%;
     white-space: pre-line;
 }
