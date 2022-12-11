@@ -2,15 +2,17 @@
     text-transform: uppercase;
     font-size: 9pt;
     letter-spacing: 3.75px;
-    padding-top: 2em;
+    padding-top: 3em;
+    padding-bottom: 1em;
     width: 83%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    align-items: center;
 }
 
 .footer .rightFooter {
-    float: right;
-    margin-top: -2em;
+    margin-left: auto;
 }
 
 .footer .rightFooter a {
@@ -19,6 +21,6 @@
 }
 
 .footer .rightFooter a img {
-    width: 30px;
+    width: auto;
     height: 30px;
 }

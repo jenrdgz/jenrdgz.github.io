@@ -34,10 +34,11 @@ export function Project(props: ProjectProps) {
         <div className="topPart">
            <ProgressiveImage src={projectDetails.mainImage.imgSrc} placeholderSrc={projectDetails.mainImage.placeholder} />
            <div className="detailWrapper">
-            <img className="left-top" src={require("../resources/left-top-corner-project-details.png")}/>
-            <img className="left-bottom" src={require("../resources/left-top-corner-project-details.png")}/>
             <div className="concept"><span>{`>`}</span>{projectDetails.projectConcept}</div>
             <div className="details">
+            <img className="left-top" src={require("../resources/left-top-corner-project-details.png")}/>
+            <img className="left-bottom" src={require("../resources/left-top-corner-project-details.png")}/>
+
               {projectDetails.description}
             </div>
            </div>
@@ -48,15 +49,15 @@ export function Project(props: ProjectProps) {
             <ProgressiveImage src={pageImage.imgSrc} placeholderSrc={pageImage.placeholder} />
            </div>)}
            <div className="bookPage">
-             {prevProject !== null && <div className="left-bottom">
+             {prevProject !== null && <div className="left-nav">
                <CustomLink halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation} 
                 setTransition={props.setTransition}
-                linkTo={`/${prevProject}`} >{`< ${PROJECTS[prevProject].projectName}`}</CustomLink>
+                linkTo={`/${prevProject}`} >{`< `}<span></span>{PROJECTS[prevProject].projectName}</CustomLink>
              </div>}
-             {nextProject !== null && <div className="right-bottom">
+             {nextProject !== null && <div className="right-nav">
               <CustomLink halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation} 
                setTransition={props.setTransition}
-               linkTo={`/${nextProject}`} >{`${PROJECTS[nextProject].projectName} >`}</CustomLink>
+               linkTo={`/${nextProject}`} >{PROJECTS[nextProject].projectName} <span></span>{`>`}</CustomLink>
              </div>}
              </div>
            </div>

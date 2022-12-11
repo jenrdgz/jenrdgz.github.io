@@ -7,11 +7,11 @@
     width: 83%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 }
 
 .nav .rightNav {
-    float: right;
-    margin-top: -1em;
+    margin-left: auto;
 }
 
 .nav .rightNav .navLink {

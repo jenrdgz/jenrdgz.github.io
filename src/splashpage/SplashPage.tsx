@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {
     Link, useNavigate
   } from "react-router-dom";
+import { CustomLink } from "../sharedComponents/CustomLink";
 import { Page } from "../sharedComponents/Page";
 import { ShutterAnimation } from "../shutter/ShutterAnimation";
 
@@ -11,21 +12,10 @@ export interface SplashPageProps {
 }
 
 export function SplashPage(props: SplashPageProps) {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    props.setTransition(true);
-  }
-
-  if (props.halfFinishedTransitionAnimation) {
-    navigate("/work");
-  }
-
-
     return (
       <Page setTransition={props.setTransition} halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation}>
         <div className="splashPageWrapper">
-        <div onClick={handleClick} className="splashPage customLink">
+        <CustomLink setTransition={props.setTransition} customClass="splashPage"  halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation} linkTo={"/work"} >
         <div className="title">
             VIEWFINDER
             <img className="left-bottom" src={require("../resources/left-bottom-corner.png")}/>
@@ -35,7 +25,7 @@ export function SplashPage(props: SplashPageProps) {
                 {`Jenny Rodriguez is a graphic designer 
                 who enjoys taking photos.`}
         </div>
-      </div>
+      </CustomLink>
       </div>
       </Page>
     );

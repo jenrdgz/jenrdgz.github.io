@@ -1,0 +1,24 @@
+.iframeWrapper {
+    margin-top: 2em; position:relative;padding-top:max(60%,326px);height:0;width:100%
+}
+
+.iframeCustom {
+    position:absolute;border:none;width:100%;height:100%;left:0;right:0;top:0;bottom:0;
+}
+
+.details h1 {
+    font-size:50pt;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 4pt;
+    font-weight: normal;
+}
+
+.details h4 {
+    font-size:20pt;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 4pt;
+    font-weight: normal;
+    margin-top: -40px;
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   useNavigate
@@ -12,10 +12,13 @@ import './nav/Nav.css';
 import './footer/Footer.css';
 import './work/Work.css';
 import './shutter/Shutter.css';
+import './portfolio/Portfolio.css';
 import { Work } from "./work/Work";
 import { ShutterAnimation } from "./shutter/ShutterAnimation";
 import { Project } from "./work/Project";
 import { About } from "./about/About";
+import { Portfolio } from "./portfolio/Portfolio";
+import { Resume } from "./resume/Resume";
 
 export default function App() {
   const [transition, setTransition] = useState(false);
@@ -37,8 +40,8 @@ export default function App() {
           <Route path="/project5" element={ <Project projectName="project5" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
           <Route path="/project6" element={ <Project projectName="project6" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
           <Route path="/about" element={ <About setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
-          <Route path="/portfolio" element={ <About setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
-          <Route path="/resume" element={ <About setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/portfolio" element={ <Portfolio setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          <Route path="/resume" element={ <Resume setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
         </Routes>
       </div>
     </Router>

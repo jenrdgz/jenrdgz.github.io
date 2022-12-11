@@ -25,16 +25,15 @@ export const PROJECTS: { [key: string]: ProjectType } = {
             placeholder: require("../resources/work1-loading.jpg"),
         },
         description: `Artist Statement
-        The camera is often utilized as a tool of representation, objectification, manipulation, and abstraction, but photography is typically the medium that is most closely associated with representing reality. My pictures call into question this very notion by embracing and pushing further the precarious relationship between the recorded world
-        and reality.
+        The camera is often utilized as a tool of representation, objectification, manipulation, and abstraction, but photography is typically the medium that is most closely associated with representing reality. My pictures call into question this very notion by embracing and pushing further the precarious relationship between the recorded world and reality.
         
-        Whether utilizing reflective materials such as mylar and mirrors; or collaging pictures printed and then reprinted to create an illusion of depth on a flat surface; or finding what seems to be unlikely, uncanny reflected light and shadow in the world; my pictures distort and disguise reality and offer a new version, in which our relationship with reality 
-        and ability to read the real is dubious.
+        Whether utilizing reflective materials such as mylar and mirrors; or collaging pictures printed and then reprinted to create an illusion of depth on a flat surface; or finding what seems to be unlikely, uncanny reflected light and shadow in the world; my pictures distort and disguise reality and offer a new version, in which our relationship with reality and ability to read the real is dubious.
         
         My working process includes two modes of intervention: first, what is captured by the camera; and second, what is created through collages. Seeking out light and spaces that are a balance of humanity and nature, in my unmanipulated photographs, I either hunt for illusions and make pictures at angles that create a feeling of disorientation; or I intervene in the landscape with reflective materials and objects that create line and division, with the aim of abstracting space.
         
-        In my collage work, the manipulation of photographs is done in camera to create the illusion or perception of layering images. Pictures are printed in multiples at various sizes, cut up, and pasted together to create layers or planes, which I then piece together in compositions that mimic my photographs made singularly with 
-        a camera.`,
+        In my collage work, the manipulation of photographs is done in camera to create the illusion or perception of layering images. Pictures are printed in multiples at various sizes, cut up, and pasted together to create layers or planes, which I then piece together in compositions that mimic my photographs made singularly with a camera.
+        
+        Both photographs and collages are installed and exist together so that the viewer contemplates these constructed spaces in and out of the camera, which may look digitally altered but are not. My aim is to call into question photography’s relationship with representation and reality.`,
         projectName: "Behind Mirrors",
         projectNameSide: "Undergrad Photography / Behind Mirrors",
         course: "Thesis",
@@ -137,8 +136,6 @@ export const PROJECTS: { [key: string]: ProjectType } = {
         },
         description: `Objective
         Pick a book and redesign it. Coffee table books are good examples, as they usually have large images and include all the components, such as text, captions, titles, subtitles, and so on. The goal is to redesign sample spreads, not the whole book.
-         
-        Pick a book and redesign it. Coffee table books are good examples as they usually have large images and include all the components, such as text, captions, titles, subtitles, and so on. The goal is to redesign sample spreads, not the whole book.
          
         Approach
         Epic Drives of the World was chosen because I wanted to take the reader on an adventure. I tried to make the pictures come alive so that the reader would be able to experience these new places.`,

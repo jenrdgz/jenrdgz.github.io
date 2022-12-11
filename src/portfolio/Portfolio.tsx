@@ -1,12 +1,12 @@
 import { Page } from "../sharedComponents/Page";
 import { ProgressiveImage } from "../sharedComponents/ProgressiveImage";
 
-export interface AboutProps {
+export interface PortfolioProps {
     setTransition: any;
     halfFinishedTransitionAnimation: boolean;
 }
 
-export function About(props: AboutProps) {
+export function Portfolio(props: PortfolioProps) {
     return (
       <Page setTransition={props.setTransition} halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation}>
         <div className="topPartWrapper">
@@ -21,11 +21,14 @@ export function About(props: AboutProps) {
             <div className="details">
             <img className="left-top" src={require("../resources/left-top-corner-project-details.png")}/>
             <img className="left-bottom" src={require("../resources/left-top-corner-project-details.png")}/>
-
-              {`Hello! My name is Jenny Rodriguez. I am a graphic designer and photographer from the Bay Area. My background and passion for photography has led me to the path of design. I love to create and to see each layout as a viewfinder. I start out with the big idea and then zoom in on the details. The details are what makes a good design a great design. I like to think out of the box and go with my instinct when creating ideas. I want my designs to be original and represent my talent as an artist.`}
+              <h1>Portfolio</h1>
+              <h4>View</h4>
             </div>
            </div>
            </div>
+        </div>
+        <div className="iframeWrapper">
+        <iframe allow="clipboard-write" sandbox="allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox allow-forms" className="iframeCustom" src="https://e.issuu.com/embed.html?backgroundColor=%23ffffff&d=web_viewfinder_pages&u=jenny_rodriguez"></iframe>
         </div>
       </Page>
     );

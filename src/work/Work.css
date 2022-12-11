@@ -132,7 +132,7 @@
 }
 
 .topPart .detailWrapper .left-top {
-    top: max(100px, 35%)!important;
+    top: 0px;
     position: absolute;
     left: 10%!important;
     width: 25px;
@@ -141,7 +141,7 @@
 
 .topPart .detailWrapper .left-bottom {
     left: 10%!important;
-    top: 50%!important;
+    bottom: 0px;
     position: absolute;
     margin-top: min(200px, 30%);
     -webkit-transform: rotate(270deg);
@@ -224,7 +224,7 @@
 .book {
     background-color: white;
     margin-top: 3em;
-    padding: 1em;
+    padding: 2em;
 }
 
 .book .bookPage {
@@ -244,36 +244,37 @@
     width: 100%;
 }
 
-.wrapper .bookPage .left-bottom {
+.wrapper .bookPage .left-nav {
     bottom: 0px;
-    left: 1.5em;
+    left: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    position: absolute;
+    color: black;
+    text-transform: uppercase;
+    font-size: 9pt;
+}
+
+.wrapper .bookPage .right-nav {
+    bottom: 0px;
+    position: absolute;
+    right: 2em;
     margin-bottom: 2em;
     text-align: center;
     color: black;
+    text-transform: uppercase;
+    font-size: 9pt;
 }
 
-.wrapper .bookPage .left-bottom {
-    bottom: 0px;
-    left: 1.5em;
-    margin-bottom: 2em;
-    text-align: center;
-    color: black;
+
+.wrapper .bookPage .right-nav span, .wrapper .bookPage .left-nav span {
+    margin: 5px;
 }
 
-.wrapper .bookPage .left-bottom .customLink:hover {
+.wrapper .bookPage .left-nav .customLink:hover {
     color: grey;
 }
 
-.wrapper .bookPage .right-bottom {
-    bottom: 0px;
-    right: 1.5em;
-    margin-bottom: 2em;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    text-align: center;
-    color: black;
-}
-
-.wrapper .bookPage .right-bottom .customLink:hover {
+.wrapper .bookPage .right-nav .customLink:hover {
     color: grey;
 }

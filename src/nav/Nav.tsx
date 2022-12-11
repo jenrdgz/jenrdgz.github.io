@@ -14,7 +14,7 @@ export function Nav(props: NavProps) {
     return (
       <div className="nav">
         <div className="title">
-          <CustomLink linkTo="/work" customClass="navLink" setTransition={props.setTransition} halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation}>
+          <CustomLink linkTo="/" customClass="navLink" setTransition={props.setTransition} halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation}>
             Jenny Rodriguez
           </CustomLink>
         </div>
