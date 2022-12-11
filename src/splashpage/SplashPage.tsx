@@ -18,8 +18,8 @@ export function SplashPage(props: SplashPageProps) {
         <CustomLink setTransition={props.setTransition} customClass="splashPage"  halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation} linkTo={"/work"} >
         <div className="title">
             VIEWFINDER
-            <img className="left-bottom" src={require("../resources/left-bottom-corner.png")}/>
-            <img className="left-top" src={require("../resources/left-top-corner.png")}/>
+            <img className="left-bottom" src={require("../resources/left-top-corner-project-details.png")}/>
+            <img className="left-top" src={require("../resources/left-top-corner-project-details.png")}/>
         </div>
         <div className="description">
                 {`Jenny Rodriguez is a graphic designer 
