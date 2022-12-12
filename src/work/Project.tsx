@@ -45,8 +45,11 @@ export function Project(props: ProjectProps) {
            </div>
         </div>
         <div className="book">
-           {projectDetails.bookImages.map(pageImage => <div className={`bookPage ${pageImage.hasBorder && 'bookBorder'}`}>
+           {projectDetails.bookImages.map(pageImage => <div className='bookPage'>
+            <div className={`${pageImage.hasBorder && 'bookBorder'}`}>
             <ProgressiveImage src={pageImage.imgSrc} placeholderSrc={pageImage.placeholder} />
+            </div>
+            <span>{pageImage.caption}</span>
            </div>)}
            <div className="bookPage">
              {prevProject !== null && <div className="left-nav">

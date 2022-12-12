@@ -14,6 +14,7 @@ interface ProgressiveImageSrcs {
     imgSrc: string;
     placeholder: string;
     hasBorder?: boolean;
+    caption?: string;
 }
 
 export const PROJECT_ORDER = ["project3", "project2", "project6", "project4", "project1", "project5"]
@@ -102,6 +103,7 @@ export const PROJECTS: { [key: string]: ProjectType } = {
                 imgSrc: require("../resources/project3/Page1.png"),
                 placeholder: require("../resources/project3/Page1-loading.png"),
                 hasBorder: true,
+                caption: "Moodboard / Images found on pinterest"
             },
             {
                 imgSrc: require("../resources/project3/Page2.png"),
@@ -179,6 +181,7 @@ export const PROJECTS: { [key: string]: ProjectType } = {
                 imgSrc: require("../resources/project5/Page1.png"),
                 placeholder: require("../resources/project5/Page1-loading.png"),
                 hasBorder: true,
+                caption: "Moodboard / Images found on pinterest"
             },
             {
                 imgSrc: require("../resources/project5/Page2.png"),
