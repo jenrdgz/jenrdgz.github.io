@@ -15,8 +15,8 @@ export function About(props: AboutProps) {
         <img className="right-bottom" src={require("../resources/left-top-corner-project.png")}/>
         <img className="right-top" src={require("../resources/left-top-corner-project.png")}/>
         <div className="viewfinder">ViewFinder</div>
-        <div className="topPart">
-           <ProgressiveImage src={require("../resources/work1.jpg")} placeholderSrc={require("../resources/work1-loading.jpg")} />
+        <div className="topPart sad">
+           <ProgressiveImage src={require("../resources/headshot.jpg")} placeholderSrc={require("../resources/headshot-loading.jpg")} />
            <div className="detailWrapper">
             <div className="details">
             <img className="left-top" src={require("../resources/left-top-corner-project-details.png")}/>
