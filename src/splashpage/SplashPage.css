@@ -46,7 +46,7 @@
     font-size: calc(.8em + .4vw);
    text-transform: uppercase;
     text-align: right;
-    letter-spacing: 4pt;
+    letter-spacing: 2pt;
     margin-right: calc((.8em + 0.4vw)/5);
     font-weight: normal;
     margin-top: calc((.8em + 0.4vw)*-2.5);

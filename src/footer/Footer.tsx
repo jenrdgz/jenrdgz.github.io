@@ -2,7 +2,7 @@ export function Footer() {
     return (
       <div className="footer">
         <div className="leftFooter">
-        © 2022 JENNY RODRIGUEZ. 
+        © 2023 JENNY RODRIGUEZ. 
         </div>
         <div className="rightFooter">
           <a href="https://www.linkedin.com/in/jennyrodriguezdesign/">

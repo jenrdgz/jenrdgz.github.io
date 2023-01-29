@@ -18,7 +18,7 @@ export function SplashPage(props: SplashPageProps) {
         <CustomLink setTransition={props.setTransition} customClass="splashPage"  halfFinishedTransitionAnimation={props.halfFinishedTransitionAnimation} linkTo={"/work"} >
         <div className="title">
             <h1>VIEWFINDER</h1>
-            <h4>Enter</h4>
+            <h4>Zoom In</h4>
             <img className="left-bottom" src={require("../resources/left-top-corner-project-details.png")}/>
             <img className="left-top" src={require("../resources/left-top-corner-project-details.png")}/>
         </div>
