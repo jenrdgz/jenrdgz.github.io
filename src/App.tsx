@@ -19,6 +19,7 @@ import { Project } from "./work/Project";
 import { About } from "./about/About";
 import { Portfolio } from "./portfolio/Portfolio";
 import { Resume } from "./resume/Resume";
+import { PROJECT_ORDER } from "./work/ProjectList";
 
 export default function App() {
   const [transition, setTransition] = useState(false);
@@ -33,12 +34,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<SplashPage setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
           <Route path="/work" element={ <Work setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
-          <Route path="/project1" element={ <Project projectName="project1" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
-          <Route path="/project2" element={ <Project projectName="project2" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
-          <Route path="/project3" element={ <Project projectName="project3" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
-          <Route path="/project4" element={ <Project projectName="project4" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
-          <Route path="/project5" element={ <Project projectName="project5" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
-          <Route path="/project6" element={ <Project projectName="project6" setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          {PROJECT_ORDER.map(projectName => {
+            const pathUrl = `/${projectName}`
+            return <Route path={pathUrl} element={ <Project projectName={projectName} setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
+          })}
           <Route path="/about" element={ <About setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
           <Route path="/portfolio" element={ <Portfolio setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />
           <Route path="/resume" element={ <Resume setTransition={setTransition} halfFinishedTransitionAnimation={halfFinishedTransitionAnimation} />} />

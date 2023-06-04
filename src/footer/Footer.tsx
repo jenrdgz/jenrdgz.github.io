@@ -11,9 +11,6 @@ export function Footer() {
           <a href="https://www.instagram.com/jennyrodriguez_design/">
             <img src={require("../resources/insta.png")} />
           </a>
-          <a href="https://www.behance.net/jenniferodrigu90">
-            <img src={require("../resources/behance.png")} />
-          </a>
         </div>
       </div>  
       

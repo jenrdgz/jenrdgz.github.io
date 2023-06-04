@@ -26,7 +26,11 @@ export function Work(props: WorkProps) {
            setTransition={props.setTransition}
            linkTo={`/${projectName}`} 
            customClass={"workLink"}>
-            <ProgressiveImage src={PROJECTS[projectName].mainImage.imgSrc} placeholderSrc={PROJECTS[projectName].mainImage.placeholder} hoverText={PROJECTS[projectName].projectName} />
+            <ProgressiveImage 
+              src={PROJECTS[projectName].mainImage.imgSrc} 
+              placeholderSrc={PROJECTS[projectName].mainImage.placeholder} 
+              hoverText={PROJECTS[projectName].projectName}
+              hoverTextDescription={PROJECTS[projectName].projectDescription} />
             </CustomLink>)}
        </div>
       </Page>

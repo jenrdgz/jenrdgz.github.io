@@ -2,6 +2,7 @@ interface ProjectType {
     mainImage: ProgressiveImageSrcs;
     description: string;
     projectName: string;
+    projectDescription: string;
     projectNameSide: string;
     course: string;
     instructor?: string;
@@ -17,7 +18,7 @@ interface ProgressiveImageSrcs {
     caption?: string;
 }
 
-export const PROJECT_ORDER = ["project3", "project2", "project6", "project4", "project1", "project5"]
+export const PROJECT_ORDER = ["project3", "project2", "project6", "project4", "project1", "project5", "project7", "project8"]
 
 export const PROJECTS: { [key: string]: ProjectType } = {
     project1: {
@@ -36,6 +37,7 @@ export const PROJECTS: { [key: string]: ProjectType } = {
         
         Both photographs and collages are installed and exist together so that the viewer contemplates these constructed spaces in and out of the camera, which may look digitally altered but are not. My aim is to call into question photography’s relationship with representation and reality.`,
         projectName: "Behind Mirrors",
+        projectDescription: "Photography",
         projectNameSide: "Undergrad Photography / Behind Mirrors",
         course: "Thesis",
         date: "2018",
@@ -59,6 +61,7 @@ export const PROJECTS: { [key: string]: ProjectType } = {
         Approach
         Stumptown Coffee started in Portland, Oregon, and bloomed into a hip brand of what coffee is today. It is not only about the coffee; it is about the conversations you have while enjoying your hot beverage. Stumptown had just come out with its first report and needed a redesign to make it look more professional.`,
         projectName: "A Perfect Cup",
+        projectDescription: "Editorial Design",
         projectNameSide: "Project Two / A Perfect Cup",
         course: "Course / Type Systems",
         instructor: "Instructor / John Nettleton",
@@ -92,6 +95,7 @@ export const PROJECTS: { [key: string]: ProjectType } = {
         To show awareness about the Earth’s forests and how we can help protect and restore them. I wanted to use a black and white film aesthetic to show the true beauty of nature within the photographs.
         `,
         projectName: "Forest Hugs",
+        projectDescription: "UI / UX Design",
         projectNameSide: "Project One / Forest Hugs",
         course: "Course / Digital Design Studio 1",
         instructor: "Instructor / Phil Hamlett",
@@ -134,6 +138,7 @@ export const PROJECTS: { [key: string]: ProjectType } = {
         Approach
         Epic Drives of the World was chosen because I wanted to take the reader on an adventure. I tried to make the pictures come alive so that the reader would be able to experience these new places.`,
         projectName: "Road Trips",
+        projectDescription: "Editorial Design",
         projectNameSide: "Project Four / Road Trips",
         course: "Course / Type Composition",
         instructor: "Instructor / John Nettleton",
@@ -170,6 +175,7 @@ export const PROJECTS: { [key: string]: ProjectType } = {
         Approach
         I explored this topic by asking the question, what if vampires existed as a part of everyday life, and how would they find other vampires looking to date? I have always been fascinated with vampire movies and TV shows and wanted to create a story about them. I researched many different types of vampires and created three deliverables that were suited for an everyday vampire looking to date.`,
         projectName: "Everyday Vampires",
+        projectDescription: "Branding Design",
         projectNameSide: "Project Three / Everyday Vampires",
         course: "Course / Visual Thinking",
         instructor: "Instructor / Jeremy Stout",
@@ -211,6 +217,7 @@ export const PROJECTS: { [key: string]: ProjectType } = {
         
         I explored many different types of materials to create an illusion of a dream state. From my experimentation, I ended up in moving a different direction from where I started. I chose the movie The Pink Panther and started experimenting with a fun but sophisticated style.`,
         projectName: "Pink Panther",
+        projectDescription: "Experimental Type",
         projectNameSide: "Project Five / Pink Panther",
         course: "Course / Type Experiments",
         instructor: "Instructor / David Hake",
@@ -225,6 +232,54 @@ export const PROJECTS: { [key: string]: ProjectType } = {
             {
                 imgSrc: require("../resources/project6/Page2.png"),
                 placeholder: require("../resources/project6/Page2-loading.png"),
+            },
+        ]
+    },
+    project7: {
+        mainImage: {
+            imgSrc: require("../resources/work7.jpg"),
+            placeholder: require("../resources/work7-loading.jpg"),
+        },
+        description: `Objective­­­
+        Pick a brand that is dead, dying, or defunct and develop a new visual identity system.`,
+        projectName: "Explorations",
+        projectDescription: "Typography",
+        projectNameSide: "Project Eight / Audubon",
+        course: "Course / Nature of Identity",
+        instructor: "Instructor / Hunter Wimmer",
+        date: "Fall 2022",
+        projectConcept: `Project Concept
+        This project is about re-branding The National Audubon Society`, 
+        bookImages: [
+            {
+                imgSrc: require("../resources/project6/Page1.png"),
+                placeholder: require("../resources/project6/Page1-loading.png"),
+            },
+            {
+                imgSrc: require("../resources/project6/Page2.png"),
+                placeholder: require("../resources/project6/Page2-loading.png"),
+            },
+        ]
+    },
+    project8: {
+        mainImage: {
+            imgSrc: require("../resources/work8.jpg"),
+            placeholder: require("../resources/work8-loading.jpg"),
+        },
+        description: `Objective­­­
+        Pick a brand that is dead, dying, or defunct and develop a new visual identity system.`,
+        projectName: "Audubon",
+        projectDescription: "Rebranding",
+        projectNameSide: "Project Eight / Audubon",
+        course: "Course / Nature of Identity",
+        instructor: "Instructor / Hunter Wimmer",
+        date: "Fall 2022",
+        projectConcept: `Project Concept
+        This project is about re-branding The National Audubon Society`, 
+        bookImages: [
+            {
+                imgSrc: require("../resources/project8/Page1.jpg"),
+                placeholder: require("../resources/project8/Page1-loading.jpg"),
             },
         ]
     }

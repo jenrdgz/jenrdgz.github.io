@@ -4,6 +4,7 @@ export interface ImageProps {
     src: string;
     placeholderSrc?: string;
     hoverText?: string;
+    hoverTextDescription?: string;
 }
 export function ProgressiveImage(props: ImageProps) {
     const [imgSrc, setImgSrc] = useState(props.placeholderSrc || props.src);
@@ -26,9 +27,10 @@ export function ProgressiveImage(props: ImageProps) {
 
     return (<>
         <div className="image" onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
-           {isShown && (
+           {(isShown && props.hoverText) && (
             <div className="hover">
-                {props.hoverText}
+                <div className="title">{props.hoverText}<br/>
+                <div className="description">{props.hoverTextDescription}</div></div>
             </div>
            )}
            <img src={imgSrc} className={customClass} /> 
