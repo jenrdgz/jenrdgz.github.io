@@ -18,7 +18,7 @@ interface ProgressiveImageSrcs {
     caption?: string;
 }
 
-export const PROJECT_ORDER = ["project3", "project2", "project6", "project4", "project1", "project5", "project7", "project8"]
+export const PROJECT_ORDER = ["project3", "project2", "project6", "project4", "project1", "project5"]
 
 export const PROJECTS: { [key: string]: ProjectType } = {
     project1: {
