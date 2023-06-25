@@ -12,12 +12,10 @@ export interface CustomLinkProps {
 export function CustomLink(props: CustomLinkProps) {
     const navigate = useNavigate();
     const [isClicked, setIsClicked] = useState(false);
-    let audio = new Audio(require("../resources/shuttersound.wav"));
 
     const handleClick = () => {
       props.setTransition(true);
       setIsClicked(true);
-      audio.play();
     }
   
     if (isClicked && props.halfFinishedTransitionAnimation) {
